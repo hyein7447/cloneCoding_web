@@ -1,0 +1,102 @@
+/* header */
+header {
+}
+/* header -top */
+header .top {
+    width: 1151px; height: 48px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+header .top nav {
+    display: flex;
+    align-items: center;
+}
+header .top nav a {
+    padding-right: 16px;
+    font-size: 0.875rem;
+}
+header .top nav a:last-child {padding-right: 0;}
+header .top nav a img {}
+header .top .right {}
+header .top .right a {
+    padding-left: 16px;
+    font-size: 0.875rem;
+}
+header .top .right a:first-child {padding-left: 0;}
+/* header -bottom */
+header .bottom {
+    width: 1151px; height: 119px; margin: 0 auto;
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    }
+header .bottom h1 {}
+header .bottom h1 a {}
+header .bottom h1 a img {}
+header .bottom #search_frm {}
+header .bottom #search_frm fieldset {
+    width: 370px; height: 47px;
+    border: 3px solid #1e6cb3;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 13px 0 21px;
+    background-color: #fff;
+    align-items: center;
+}
+header .bottom #search_frm fieldset #user_search {
+    width: 290px;
+    outline: none;
+}
+header .bottom #search_frm fieldset #user_search::placeholder {color:#1e6cb3 ;}
+header .bottom #search_frm fieldset #search_btn {
+    width: 24px; height: 24px;
+}
+header .bottom .last_right {}
+header .bottom .last_right #language_frm {float: right;}
+header .bottom .last_right #language_frm fieldset {
+    
+}
+header .bottom .last_right #language_frm fieldset #language_sele {
+    border: 1px solid #1e6cb3;
+    background-color: #fff;
+    font-size: 0.8125rem;
+    margin-right: 7px;
+}
+header .bottom .last_right #language_frm fieldset #language_sele option {}
+header .bottom .last_right #language_frm fieldset #go_btn {
+    background-color: #1e6cb3;
+    color: #fff;
+    width: 28px; height: 28px;
+    font-size: 0.8125rem;
+}
+header .bottom .last_right .weather {
+    clear: both;
+}
+header .bottom .last_right .weather .curren_weather {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.03rem; padding: 5px 0;
+}
+header .bottom .last_right .weather p {
+    font-size: 0.8125rem;
+
+}
+/* main1행 */
+/* main1행 - banner */
+/* main1행 - right (코로나, 교통정보) */
+/* main2행 - 주요서비스 */
+/* main3행 - 배너3 */
+/* main4행 - 게시판 */
+/* main4행 - 게시판-이벤트신청 */
+/* main4행 - 게시판-이벤트행사축제 */
+/* main4행 - 게시판-서비스 */
+/* main5행 - 분야정보 */
+/* main6행 - 새소식 */
+/* footer */
+/* footer-1행 */
+/* footer-2행 */
