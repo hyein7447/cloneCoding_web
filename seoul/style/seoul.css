@@ -1,196 +1,234 @@
-/* header */
-header {
-}
-/* header -top */
-header .top {
-    width: 1151px; height: 48px;
+/* heder */
+header {}
+header .first{
+    width: 1151px;height: 48px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
-header .top nav {
-    display: flex;
-    align-items: center;
-}
-header .top nav a {
-    padding-right: 16px;
-    font-size: 0.875rem;
-}
-header .top nav a:last-child {padding-right: 0;}
-header .top nav a img {}
-header .top .right {}
-header .top .right a {
-    padding-left: 16px;
-    font-size: 0.875rem;
-}
-header .top .right a:first-child {padding-left: 0;}
-/* header -bottom */
-header .bottom {
+header .first nav {display: flex;}
+header .first nav a {margin-right: 16px; font-size: 0.875rem;}
+header .first nav a:last-child {margin-right: 0px;}
+header .first nav a img {}
+/* heder-top */
+header .first .mypage {}
+header .first .mypage a {margin-left: 16PX;font-size: 0.875rem;}
+header .first .mypage a:first-child {margin-left: 0PX;}
+/* heder-bottom */
+header .last {
     width: 1151px; height: 119px; margin: 0 auto;
     display: flex;
-    flex-flow:row nowrap;
+    flex-flow:  row nowrap;
     justify-content: space-between;
     align-items: center;
-    }
-header .bottom h1 {}
-header .bottom h1 a {}
-header .bottom h1 a img {}
-header .bottom #search_frm {}
-header .bottom #search_frm fieldset {
-    width: 370px; height: 47px;
-    border: 3px solid #1e6cb3;
+}
+    /* h1,search_frm,right 정렬 대상의 부모 flex 대상 */
+    
+
+header .last {}
+header .last h1 {}
+header .last h1 a {}
+header .last h1 a img {}
+header .last #search {}
+header .last #search fieldset {
+    width: 370px; height: 47px; border: 3px solid #1e6cb3;
+    background-color: #ffffff;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    padding: 0 13px 0 21px;
-    background-color: #fff;
-    align-items: center;
-}
-header .bottom #search_frm fieldset #user_search {
-    width: 290px;
+    align-items:center ; padding: 0 13px 0 21px;
+} 
+header .last #search fieldset #user_search::placeholder{color: #1e6cb3;}
+header .last #search fieldset #user_search {
+    width:300px ;
     outline: none;
 }
-header .bottom #search_frm fieldset #user_search::placeholder {color:#1e6cb3 ;}
-header .bottom #search_frm fieldset #search_btn {
-    width: 24px; height: 24px;
-}
-header .bottom .last_right {}
-header .bottom .last_right #language_frm {float: right;}
-header .bottom .last_right #language_frm fieldset {
-    
-}
-header .bottom .last_right #language_frm fieldset #language_sele {
-    border: 1px solid #1e6cb3;
+header .last #search fieldset #userBtn {width: 24px; height: 24px;}
+header .last #search fieldset #userBtn img {}
+header .last .right {}
+header .last .right #lang {float:right;}
+header .last .right #lang fieldset {}
+header .last .right #lang fieldset select  {
     background-color: #fff;
-    font-size: 0.8125rem;
+    width: 98px ;
+    height: 28px;
     margin-right: 7px;
+    border:3px solid #1e6cb3;
+    font-size: 0.8125rem;
 }
-header .bottom .last_right #language_frm fieldset #language_sele option {}
-header .bottom .last_right #language_frm fieldset #go_btn {
-    background-color: #1e6cb3;
+header .last .right #lang fieldset select option {font-size: 0.813rem;}
+header .last .right #lang fieldset .goBtn {
+    background-color:#1e6cb3;
     color: #fff;
     width: 28px; height: 28px;
     font-size: 0.8125rem;
 }
-header .bottom .last_right .weather {
-    clear: both;
-}
-header .bottom .last_right .weather .curren_weather {
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: -0.03rem; padding: 5px 0;
-}
-header .bottom .last_right .weather p {
-    font-size: 0.8125rem;
+header .last .weather {clear: both;}
+header .last .weather .current_weather {font-size: 1.5rem;}
+header .last .weather p {
+    font-size:0.8125rem;
 
 }
-/* main1행 */
-/* main1행 - banner */
-/* main1행 - right (코로나, 교통정보) */
-/* main2행 - 주요서비스 */
-/* main3행 - 배너3 */
-/* main4행 - 게시판 */
-/* main4행 - 게시판-이벤트신청 */
-/* main4행 - 게시판-이벤트행사축제 */
-/* main4행 - 게시판-서비스 */
-/* main5행 - 분야정보 */
-/* main6행 - 새소식 */
+/* main행1 */
+main {}
+main > * {width: 1151px; margin: 0 auto;}
+/* main행1-banner */
+main .visual {
+    background-color: yellow;
+    display: flex; justify-content: space-between;
+}
+main .visual .left {
+    background-color: tomato;
+    width: 770px;
+    position: relative;
+}
+main .visual .left a { }
+main .visual .left a img {}
+main .visual .left .close {
+    position: absolute;
+    border-radius:5px solid #000;
+    font-size: 0.813rem;
+    padding: 4px 9px 5px 8px;
+    display: inline-block;
+    background-color:teal;
+    bottom: 15px;
+    right: 15px
+}
+/* main행1-right (코로나 ,교통정보) */
+main .visual .right {
+    background-color: aqua;
+    width: 360px;
+}
+main .visual .right .corona  {
+    background-color: violet;
+    position: relative;
+    display: block;
+}
+main .visual .right .corona img {}
+main .visual .right .corona .date {
+    font-size: 0.813rem;
+    position: absolute;
+    right:20px;
+    top: 14px;
+}
+main .visual .right .corona .data {
+    background-color:sienna;
+    font-size: 0.813rem;
+    position: absolute;
+    border: 1px solid #000;
+    text-align: center;
+}
+main .visual .right .corona .data:nth-child(3) {
+    width: 140px;
+    top: 84px;  
+    left: 30px;
+} /* 확진자 */
+main .visual .right .corona .data:nth-child(4) {
+    width: 140px;
+    right:29px;
+    top: 84px;
+
+} /* 추가확진자 */
+main .visual .right .corona .data:nth-child(5) {
+    width: 94px;
+    bottom: 58px;  
+    left: 30px;
+} /* 퇴원 */
+main .visual .right .corona .data:nth-child(6) {
+    width: 94px; 
+    bottom: 58px;  
+    left: 145px;
+} /* 추가퇴원 */
+main .visual .right .corona .data:nth-child(7) {
+    width: 59px; 
+    bottom: 58px;  
+    right:32px;} /* 사망 */
+main .visual .right .traffic {}
+main .visual .right .traffic img {}
+/* main행2-주요서비스 */
+main .service {margin-bottom:80px ;}
+main .service .title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+main .service .title h1 {width: 109px;}
+main .service .title .site {
+    border: 1px solid #D9D9D9;
+    font-size: 0.813rem;}
+main .service .contents {
+    display: flex;
+    flex-flow: row nowrap;
+}
+main .service .contents a  {
+    display: flex; flex-flow: column nowrap; 
+    /* a한테 display:flex를 적용하면 display:block을 쓴것과 같은 의미로 적용된다 */
+    width: 9.09%;
+    text-align: center;
+}
+main .service .contents a img  {width:60px; margin: 0 auto;}
+main .service .contents a span {font-size: 0.813rem;}
+
+/* main행3-배너3 */
+main .bnr_bg {
+    background-color: #eff4f8;
+    width: 1920px;}
+main .bnr_bg .bnr {width:1151px; margin: 0 auto; display: flex;}
+main .bnr_bg .bnr a {display: block;}
+main .bnr_bg .bnr a img {}
+/* main행4-게시판 */
+/* main행4-게시판-이벤트신청 */
+/* main행4-게시판-이달행사축제 */
+/* main행4-게시판-서비스 */
+/* main행5-새소식 */
+/* main행5-새소식 */
 /* footer */
 footer {
-    background-color: aqua;
-    width: 1151px; height: 67px;
+    width: 1151px;
+    align-items: center;
     margin: 0 auto;
 }
-/* footer-1행 */
-footer .top {
-    display: flex;
-    flex-flow: row nowrap;
+footer .top {display: flex;
     justify-content: space-between;
-    padding: 22px 0;
-}
-footer .top .menu {
-    display: flex;
     flex-flow: row nowrap;
 
 }
+footer .top .menu {padding: 82px 0;}
 footer .top .menu a {
-    font-size: 1rem;
-    letter-spacing: -0.01rem;
-    padding-right: 16px;
+    margin-right:16px;
 }
-footer .top .menu a:last-child {padding-right:0;}
-footer .top .menu a em {
-    font-size: 1rem;
-    font-weight: 500;
+footer .top .menu a em {}
+footer .top .sns  {
+    margin-top: 82px;
 }
-footer .top .sns {}
-footer .top .sns a {
-    display: inline-block;
-    background-image: url(../images/icon_sns2/icon_set3.png);
+footer .top .sns a {  
+    background-image: url(../images/icon_sns2/iconset_3.png);
     background-repeat: no-repeat;
-    width: 25px; height: 25px;
-    text-indent: -9999px;
-    margin-right: 16px;
+    width: 25PX; height: 25PX;
+    text-indent:-9999px;
+    display: inline-block;
 }
 footer .top .sns a:nth-child(1) {}
-footer .top .sns a:nth-child(2) {
-    background-position-x:-25px;
-}
-footer .top .sns a:nth-child(3) {
-    background-position-x:-50px;
-}
-footer .top .sns a:nth-child(4) {
-    background-position-x:-75px;
-}
-footer .top .sns a:nth-child(5) {
-    background-position-x:-100px;
-}
-footer .top .sns a:nth-child(6) {
-    background-position-x:-125px;
-}
-footer .top .sns a:hover {
-    background-position-y:-25px;
-}
-/* footer .top .sns a:nth-child(1):hover {
-    background-position-y:-25px;
-}
-footer .top .sns a:nth-child(2):hover {
-    background-position-y:-25px;
-}
-footer .top .sns a:nth-child(3):hover {
-    background-position-y:-25px;
-}
-footer .top .sns a:nth-child(4):hover {
-    background-position-y:-25px;
-}
-footer .top .sns a:nth-child(5):hover {
-    background-position-y:-25px;
-}
-footer .top .sns a:nth-child(6):hover {
-    background-position-y:-25px;
-} */
-/* footer-2행 */
-footer .bottom {
-    background-color: tomato;
-    width: 1151px; height: 105px;
-    display: flex;
-    flex-flow: row nowrap;
+footer .top .sns a:nth-child(2) {background-position-x:-25px;}
+footer .top .sns a:nth-child(3) {background-position-x:-50px;}
+footer .top .sns a:nth-child(4) {background-position-x:-75px;}
+footer .top .sns a:nth-child(5) {background-position-x:-100px;}
+footer .top .sns a:nth-child(6) {background-position-x:-125px;}
+footer .top .sns a:hover {background-position-y: -25px;}
+
+footer .bottom {display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 24px 0;
+    flex-flow:  row nowrap;
 }
-footer .bottom .left {
-    display: flex;
-    flex-flow: row nowrap;
-}
-footer .bottom .left p {margin-right: 16px;}
-footer .bottom .left p img {}
-footer .bottom .left address {
-    font-size: 0.8125rem;
-    fon
-}
+footer .bottom .left {}
+footer .bottom .left p {display: inline-block;}
+footer .bottom .left p img {padding-right: 50px;}
+footer .bottom .left address {display: inline-block;}
 footer .bottom .banner {}
-footer .bottom .banner a {}
+footer .bottom .banner a  {}
 footer .bottom .banner a img {}
+/* footer-1행 */
+/* footer-2행 */
