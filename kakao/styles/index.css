@@ -1,3 +1,4 @@
+* {transition:all 0.5s;}
 /* header */
 header {
     padding: 0 20px; background: rgba(0,0,0,0.8);
@@ -26,7 +27,6 @@ main {background-color: #f1f1f1; padding-bottom: 40px;}
 main .visual {
     height: 650px; overflow: hidden;
     position: relative;
-    background-color: aqua;
 }
 main .visual video {width: 100%;}
 main .visual .logo {
@@ -63,7 +63,7 @@ main .board a:first-child h2 {padding-bottom: 50px;}
 main .board a .contents {
     line-height: 1.7;
 }
-main .board a:first-child .contents {color: ;#777}
+main .board a:first-child .contents {color: #777;}
 main .gallery {}
 main .gallery a {
 }
@@ -76,7 +76,7 @@ main .gallery a h2 {
     font-weight: 700;
     line-height: 1.5;
 }
-main .gallery a .contents {line-height: 1.7; color: ;#777}
+main .gallery a .contents {line-height: 1.7; color: #777;}
 /* footer */
 footer {border-top: 1px solid #777; padding: 40px 0;}
 footer .top, footer address {max-width: 1200px; margin: 0 auto;}
