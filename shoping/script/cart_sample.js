@@ -47,3 +47,19 @@ benefit_info.addEventListener('click', function(){
 close.addEventListener('click', function(){
     benefit_open.style.display = "none"
 })
+
+// 도착예정 94% 클릭 시 팝업 출력
+
+const delivery_menu = item_detail.querySelector('.delivery_menu')
+const menu_open = item_detail.querySelector('.delivery_menu_open')
+const icon = item_detail.querySelector('.delivery_menu i[class$=down')
+console.log(delivery_menu, menu_open, icon)
+
+menu_open.style.display = 'none'
+
+delivery_menu.addEventListener('click', function(){
+    menu_open.style.display = 'block';
+    delivery_menu.style.borderBottomLeftRadius = 0
+    delivery_menu.style.borderBottomRightRadius = 0
+    icon.style.transform = `scaleY(${-1})`
+})
