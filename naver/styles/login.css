@@ -1,7 +1,7 @@
 /* all */
 /* #login_wrap main */
 #login_wrap main {
-    max-width: 460px; margin: 0 auto; background-color: tomato;
+    max-width: 460px; margin: 0 auto;
 }
 #login_wrap main #loginFrm {
     /* border: 1px solid #ccc; border-radius: 5px; */
@@ -146,35 +146,128 @@
 #login_wrap main #loginFrm fieldset .login_container .id_login .id_pw_state .ip_state input[name*=state]:checked + label .switch_bg{background-color: #03c75a;}
 
 /* ID로그인---error message */
-#login_wrap main #loginFrm fieldset .login_container .id_login .error_message {}
+#login_wrap main #loginFrm fieldset .login_container .id_login .error_message {
+    font-size: 0.91rem; color: #f00; padding: 10px 0;
+}
 /* ID로그인---로그인 버튼 */
 #login_wrap main #loginFrm fieldset .login_container .id_login .login_btn_wrap {}
 #login_wrap main #loginFrm fieldset .login_container .id_login .login_btn_wrap #loginBtn {
     width: 100%; background: #03c75a; color: #fff; border-radius:5px; padding: 16px 0; margin-top: 20px;
 }
 /* 일회용번호 */
-#login_wrap main #loginFrm fieldset .login_container .disposable_login {background-color: pink;}
-#login_wrap main #loginFrm fieldset .login_container .disposable_login .title {}
-#login_wrap main #loginFrm fieldset .login_container .disposable_login .title p {}
-#login_wrap main #loginFrm fieldset .login_container .disposable_login .title p span {}
-#login_wrap main #loginFrm fieldset .login_container .disposable_login .title p em {}
-#login_wrap main #loginFrm fieldset .login_container .disposable_login .title a {}
-#login_wrap main #loginFrm fieldset .login_container .disposable_login .num_input {}
-#login_wrap main #loginFrm fieldset .login_container .disposable_login .num_input #disposable_num {}
+#login_wrap main #loginFrm fieldset .login_container .disposable_login {
+    text-align: center;
+}
+#login_wrap main #loginFrm fieldset .login_container .disposable_login .title {
+    display: flex; flex-flow: column nowrap; align-items: center;
+}
+#login_wrap main #loginFrm fieldset .login_container .disposable_login .title .title_txt {
+    margin-top: 15px;
+}
+#login_wrap main #loginFrm fieldset .login_container .disposable_login .title .title_txt p {
+    text-align: center; line-height: 1.2;
+}
+#login_wrap main #loginFrm fieldset .login_container .disposable_login .title .title_txt p span {
+    color: #03c75a;
+}
+#login_wrap main #loginFrm fieldset .login_container .disposable_login .title .title_txt p span em {}
+#login_wrap main #loginFrm fieldset .login_container .disposable_login .title .title_txt p:nth-child(1) span em {
+    margin-right: 3px;
+}
+#login_wrap main #loginFrm fieldset .login_container .disposable_login .title .title_txt p:nth-child(1) span em::after {
+    content: ''; display: inline-block;
+    background: url(../images/m_sp_login.png);
+    background-size: 251px 210px;
+    background-position: -82px -162px;
+    width: 14px; height: 15px;
+    position: relative; top: 3px;
+}
+#login_wrap main #loginFrm fieldset .login_container .disposable_login .title .title_txt p:nth-child(2) span em::before {
+    background: url(../images/dot.svg) no-repeat;
+    width: 14px; height: 15px; position: relative; left: 5px; top: 1px;
+    content: ''; display: inline-block;
+}
+#login_wrap main #loginFrm fieldset .login_container .disposable_login .title .title_txt p span em {}
+#login_wrap main #loginFrm fieldset .login_container .disposable_login .title a {
+    background: url(../images/m_sp_login.png);
+    background-size: 251px 210px;
+    background-position: -186px -48px;
+    content: ''; display: inline-block;
+    width: 11px; height: 11px;
+    margin: 10px 0 30px;
+}
+#login_wrap main #loginFrm fieldset .login_container .disposable_login .num_input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex; flex-flow: column nowrap; background-color: #fff;
+    padding: 16px 0; text-align: center;
+}
+#login_wrap main #loginFrm fieldset .login_container .disposable_login .error {
+    color: #f00; font-size: 0.91rem; padding: 10px 0 5px;
+}
+#login_wrap main #loginFrm fieldset .login_container .disposable_login .num_input #disposable_num {
+    text-align: center;
+}
 #login_wrap main #loginFrm fieldset .login_container .disposable_login .login_btn_wrap {}
-#login_wrap main #loginFrm fieldset .login_container .disposable_login .login_btn_wrap #disposableLoginBtn {}
+#login_wrap main #loginFrm fieldset .login_container .disposable_login .login_btn_wrap #disposableLoginBtn {
+    width: 100%; background: #03c75a; color: #fff; border-radius:5px; padding: 16px 0; margin-top: 3px;
+}
 /* QR코드 */
-#login_wrap main #loginFrm fieldset .login_container .qr_login {background-color: yellow;}
-#login_wrap main #loginFrm fieldset .login_container .qr_login .qrCord {}
-#login_wrap main #loginFrm fieldset .login_container .qr_login .qrCord img {}
-#login_wrap main #loginFrm fieldset .login_container .qr_login .qrCord span {}
-#login_wrap main #loginFrm fieldset .login_container .qr_login .qrCord em {}
-#login_wrap main #loginFrm fieldset .login_container .description {}
-#login_wrap main #loginFrm fieldset .login_container .description p {}
+#login_wrap main #loginFrm fieldset .login_container .qr_login {}
+#login_wrap main #loginFrm fieldset .login_container .qr_login .qrCord {
+    display: flex; justify-content: center; align-items: flex-end;
+    position: relative; left: 30px;
+}
+#login_wrap main #loginFrm fieldset .login_container .qr_login .qrCord .left {} 
+#login_wrap main #loginFrm fieldset .login_container .qr_login .qrCord .left img {
+    width: 120px;
+}
+#login_wrap main #loginFrm fieldset .login_container .qr_login .qrCord .right {
+    display: flex; flex-flow: column nowrap; position: relative; top: -11px;
+} 
+#login_wrap main #loginFrm fieldset .login_container .qr_login .qrCord .right span {
+    font-size: 0.91rem;
+}
+#login_wrap main #loginFrm fieldset .login_container .qr_login .qrCord .right em {
+    color: #03c75a; font-weight: 700;
+}
+#login_wrap main #loginFrm fieldset .login_container .description {
+    text-align: center;
+}
+#login_wrap main #loginFrm fieldset .login_container .description p {
+    margin-top: 10px;
+}
+#login_wrap main #loginFrm fieldset .login_container .description p:nth-child(2) {
+    font-size: 0.91rem; margin-top: 5px; 
+}
+#login_wrap main #loginFrm fieldset .login_container .description p:nth-child(2) span:nth-child(1) {
+    background: url(../images/m_sp_login.png);
+    background-size: 251px 210px;
+    background-position: -186px -60px;
+    width: 12px; height: 11px;
+    content: ''; display: inline-block;
+}
+#login_wrap main #loginFrm fieldset .login_container .description p:nth-child(2) span:nth-child(2) {
+    background: url(../images/m_sp_login.png);
+    background-size: 251px 210px;
+    background-position: -186px -72px;
+    width: 12px; height: 11px;
+    content: ''; display: inline-block;
+    position: relative; left: 1px;
+}
 #login_wrap main #loginFrm fieldset .login_container .description p span {}
-#login_wrap main #loginFrm fieldset .login_container .description p em {}
-#login_wrap main #loginFrm fieldset .login_container .description p strong {}
-#login_wrap main #loginFrm fieldset .login_container .description p a {}
+#login_wrap main #loginFrm fieldset .login_container .description p em {
+    background-color: black; color: #fff; border-radius: 30px; padding: 0 10px;
+    font-size: 0.91rem;
+}
+#login_wrap main #loginFrm fieldset .login_container .description p a {
+    background: url(../images/m_sp_login.png);
+    background-size: 251px 210px;
+    content: ''; display: inline-block;
+    background-position:-186px -48px;
+    width: 11px; height: 11px;
+}
 /* 찾기 ~ 광고 */
 #login_wrap main .search {}
 #login_wrap main .search a {}

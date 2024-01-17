@@ -1,7 +1,7 @@
 /* 통합 common css */
 /* all */
 #login_wrap {
-    background-color: aqua; max-width: 743px;
+    max-width: 743px;
     position: relative; margin: 0 auto;
 }
 #login_wrap #lang_select {
@@ -21,6 +21,26 @@
     background: url(../images/m_sp.png) 0 -166px;
     width: 248px; height: 48px; margin: 0 auto;
 }
+/* search */
+#login_wrap main .search {
+    display: flex; justify-content: center; 
+}
+#login_wrap main .search a {
+    font-size: 0.91rem; color: #888; margin-bottom: 20px;
+    padding-right: 15px;
+}
+#login_wrap main .search a:last-child {
+    padding: 0;
+}
+#login_wrap main .search a::after {
+    content: ''; display: inline-block;
+    width: 1px; height: 10px; background-color: #888;
+    margin-left: 15px;
+}
+#login_wrap main .search a:last-child::after {
+    display: none;
+}
+
 /* footer */
 #login_wrap footer {padding: 50px 0 30px;}
 #login_wrap footer .f_menu {padding-bottom: 10px;}

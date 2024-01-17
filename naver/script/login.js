@@ -48,3 +48,48 @@ login_title[2].addEventListener('click',()=>{
     disposable_login_container.style.display = 'none'
     qr_login_container.style.display = 'block'
 })
+
+//====================================================
+console.log('로그인 메세지 출력======================')
+//  아이디 로그인 시 틀린 정보 또는 입력되지 않은 정보에 따라 error message 출력하기
+// 1. 아이디 미입력 후 로그인 버튼 클릭 시 => '아이디를 입력해주세요'
+// 2. 아이디를 입력 후 비밀번호를 미입력 후 로그인 버튼 클릭 시 => '비밀번호를 입력해주세요'
+// 3. 아이디 , 비밀번호 입력 후 로그인 버튼 클릭 시 해당 정보가 맞지 않다면 => '아이디(로그인 전용 아이디)또는 비밀번호를 잘못 입력했습니다. 입력하신 내용을 다시 확인해주세요.'
+// 4. 아이디, 비밀번호 입력 후 로그인 버튼 클릭 시 해당 정보가 맞다면 => 로그인 성공 팝업 '어서오세요 00님'
+
+const useurIdInput = document.querySelector('#useurId')
+const useurPwInput = document.querySelector('#useurPw')
+const error_message = document.querySelector('.error_message')
+const loginBtn = document.querySelector('#loginBtn')
+const userList = [{
+    id:'admin',
+    pw: '1234'
+}]
+console.log(useurIdInput, useurPwInput, error_message, loginBtn)
+
+loginBtn.addEventListener('click',()=>{
+    if(useurIdInput.value == ''){ // 아이디 빈 문자열 검사 -> 참이라면
+        error_message.innerText = '아이디를 입력해주세요.' // 참일 때 실행
+    }else if(useurPwInput.value == ''){
+        error_message.innerText = '비밀번호를 입력해주세요.'}
+    else {
+        if(userList[0].id == useurIdInput.value && userList[0].pw == useurPwInput.value){
+            alert(`어서오세요 ${userList[0].id} 님`)
+        }else{
+            alert('아이디(로그인 전용 아이디)또는 비밀번호를 잘못 입력했습니다. 입력하신 내용을 다시 확인해주세요.')
+            useurPwInput.value = ''
+        }
+    }
+})
+
+// 인증번호를 미입력 후 로그인버튼 클릭시 error 메세지 출력
+
+const disposableLoginBtn = document.querySelector('#disposableLoginBtn')
+const disposable_num = document.querySelector('#disposable_num')
+const error = document.querySelector('.error')
+
+disposableLoginBtn.addEventListener('click', ()=>{
+    if(disposable_num.value == ''){
+        error.innerHTML = '일회용 로그인 번호를 입력하세요.'
+    }
+})

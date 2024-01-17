@@ -68,14 +68,16 @@
                         <!-- 내용 탭 2. 일회용번호 -->
                         <div class="login_c disposable_login">
                             <div class="title">
-                                <p>네이버앱의 메뉴 > 설정 <span><!-- icon --></span> 로그인 아이디 관리> <br>
-                                    더보기<em><!-- icon --></em> > 일회용 로그인 번호에 보이는 번호를 입력해 주세요.
-                                </p>
-                                <a href="#">?</a> <!-- font awesome -->
+                                <div class="title_txt">
+                                    <p>네이버앱의<span>메뉴 > 설정<em><!-- icon --> </em>로그인 아이디 관리></span></p>
+                                    <p><span>더보기<em><!-- icon --></em>> 일회용 로그인 번호</span>에 보이는 번호를 입력해 주세요.</p>
+                                </div>
+                                <a href="#"></a> <!-- font awesome -->
                             </div>
                             <div class="num_input">
-                                <input type="number" id="disposable_num" placeholder="번호를 입력하세요">
+                                <input type="text" id="disposable_num" placeholder="번호를 입력하세요">
                             </div>
+                            <div class="error"><!-- JS --></div>
                             <div class="login_btn_wrap">
                                 <button type="button" id="disposableLoginBtn">로그인</button>
                             </div>
@@ -83,14 +85,18 @@
                         <!-- 내용 탭 3. QR코드 -->
                         <div class="login_c qr_login">
                             <div class="qrCord">
-                                <img src="./images/qr.svg" alt="QR코드">
-                                <span>남은시간</span>
-                                <em>02분 52초</em>
+                                <div class="left">
+                                    <img src="./images/qr.svg" alt="QR코드">
+                                </div>
+                                <div class="right">
+                                    <span>남은시간</span>
+                                    <em>02분 52초</em>
+                                </div>
                             </div>
                             <div class="description">
                                 <p>공용 네트워크, 공용 PC라면 안전을 위해<br>QR코드로 로그인해주세요.</p>
-                                <p>네이버앱 <span><!-- icon --></span> > 렌즈<em><!-- icon --></em> 를 눌러 QR코드를 스캔하여<br>
-                                보이는 숫자 중 <strong>21</strong> 를 선택하면 로그인 됩니다. <a href="#"></a></p>
+                                <p>네이버앱 <span><!-- icon --></span> > 렌즈 <span><!-- icon --></span> 를 눌러 QR코드를 스캔하여<br>
+                                보이는 숫자 중 <em>21</em> 를 선택하면 로그인 됩니다. <a href="#"></a></p>
                             </div>
                         </div>
                     </div>
