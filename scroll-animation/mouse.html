@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!-- 마우스 그 이리지러이 움직일때 따라다니는 노란색 만들기>_0 -->
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse</title>
+    <style>
+        .circle{
+            width: 50px; height: 50px;
+            border-radius: 50%;
+            background: #ff0;
+            position: fixed;  
+            transform: translate(-50%,-50%);
+            pointer-events: none; /* 이거 써야지 클릭이 가능하다! */
+        }
+        main {
+            background:radial-gradient(circle,aqua,pink);
+            height: 800px; width: 100%;
+        }
+        .design1{opacity: 0.5;}
+    </style>
+</head>
+<body>
+    <h1>mouse event</h1>
+    <div class="circle"></div>
+    <main>
+        <a href="https://google.com">google</a>
+    </main>
+    <script>
+        const google_a =document.querySelector('main a')
+        const circle = document.querySelector('.circle')
+        window.addEventListener('mousemove',(e)=>{
+            // console.log(`sceenX=${e.screenX}clienX=${e.clientX}`)
+            //  스크린은 모니터 클라이언트는 보이는 화면 기준
+            console.log(`clienX=${e.clientX}`)
+            circle.style.left = `${e.clientX}px`
+            circle.style.top = `${e.clientY}px`
+        }) 
+        google_a.addEventListener('mouseover',()=>{
+            circle.classList.add('design1')
+        })
+        google_a.addEventListener('mouseout',()=>{
+            circle.classList.remove('design1')
+        })
+    </script>
+</body>
+</html>

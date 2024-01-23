@@ -3,32 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>scroll</title>
+    <title>스크롤 연습</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/scroll2.css">
 </head>
 <body>
+    <header>
+        <div class="circle"></div>
+        <div class="first">
+            <h1>interior view</h1>
+            <nav>
+                <a href="#">A</a>
+                <a href="#">B</a>
+                <a href="#">C</a>
+                <a href="#">D</a>
+            </nav>
+        </div>
+    </header>
     <main>
-        <h1>Interior view</h1>
-        <div class="page_btn">
-            <button type="button" id="page1">A</button>
-            <button type="button" id="page2">B</button>
-            <button type="button" id="page3">C</button>
-            <button type="button" id="page4">D</button>
-        </div>
-        <div class="side_btn">
-            <button type="button" id="bar_btn1" class="active"></button>
-            <button type="button" id="bar_btn2"></button>
-            <button type="button" id="bar_btn3"></button>
-            <button type="button" id="bar_btn4"></button>
-        </div>
-        <div class="container">
-            <div class="item item1"></div>
-            <div class="item item2"></div>
-            <div class="item item3"></div>
-            <div class="item item4"></div>
-        </div>
+        <div class="bg bg1"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="bg bg4"></div>
     </main>
+    <div class="link">
+        <a title="인테리어A" class="active"></a>
+        <a title="인테리어B"></a>
+        <a title="인테리어C"></a>
+        <a title="인테리어D"></a>
+    </div>
     <script src="./script/scroll2.js"></script>
 </body>
 </html>
